@@ -110,19 +110,21 @@ public class Dog {
         barked = (int) (Math.random() * 1001);
     }
 
-    //override the compareTo method
+    // override the compareTo method
     public int compareTo(Dog otherDog) {
-        //compare the first letter of the name
-        //if dogs are equal, return 0
-        //if this dog's name is first in the alphabet, return -1
-        //if this dog's name is last in the alphabet, return 1
-        if (this.name.charAt(0) < otherDog.name.charAt(0)) {
-            return -1;
-        } else if (this.name.charAt(0) > otherDog.name.charAt(0)) {
+        // compare the names of the dogs if one name is higher in the alphabet than the
+        // other return 1
+        if (name.compareTo(otherDog.getName()) > 0) {
             return 1;
-        } else {
-            return 0;
         }
+        // compare the names of the dogs if one name is lower in the alphabet than the
+        // other return -1
+        else if (name.compareTo(otherDog.getName()) < 0) {
+            return -1;
+        }
+        // if the names are equal return 0
+        return 0;
+
     }
 
     // create a method that makes the dog bark

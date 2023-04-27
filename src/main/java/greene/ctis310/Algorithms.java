@@ -23,23 +23,24 @@ public class Algorithms {
     }
 
     //method to sort the dogs in alphabetical order using merge sort
+    //if two Dogs have the same letter, compare the next letter util either the names are equal or one is greater than the other
     //time complexity is O(n log n)
     public static void mergeSortDogs(Dog[] dogs) {
         //if the array has more than one element
         if (dogs.length > 1) {
-            //find the middle of the array
+            //find the middle index
             int mid = dogs.length / 2;
             //create a left array
             Dog[] left = new Dog[mid];
             //create a right array
             Dog[] right = new Dog[dogs.length - mid];
-            //copy the left half of the array into the left array
-            for (int i = 0; i < mid; i++) {
+            //copy the first half of the dogs array into the left array
+            for (int i = 0; i < left.length; i++) {
                 left[i] = dogs[i];
             }
-            //copy the right half of the array into the right array
-            for (int i = mid; i < dogs.length; i++) {
-                right[i - mid] = dogs[i];
+            //copy the second half of the dogs array into the right array
+            for (int i = 0; i < right.length; i++) {
+                right[i] = dogs[mid + i];
             }
             //sort the left array
             mergeSortDogs(left);
