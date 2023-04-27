@@ -1,0 +1,65 @@
+Enter the amount of dogs to compare: 
+15
+Dogs before sorting: 
+Dog name: [Rover] age: 16, breed: pug, color: white, barked: 612
+Dog name: [Tucker] age: 3, breed: bulldog, color: white, barked: 111
+Dog name: [Duke] age: 7, breed: pug, color: white and black spots, barked: 331
+Dog name: [Rocky] age: 13, breed: lab, color: gray, barked: 894
+Dog name: [Bear] age: 18, breed: lab, color: white, barked: 565
+Dog name: [Jack] age: 19, breed: poodle, color: gray, barked: 79
+Dog name: [Bear] age: 10, breed: bulldog, color: white, barked: 887
+Dog name: [Rover] age: 12, breed: poodle, color: white and black spots, barked: 278
+Dog name: [Jack] age: 17, breed: westie, color: golden, barked: 960
+Dog name: [Jack] age: 4, breed: lab, color: golden, barked: 281
+Dog name: [Duke] age: 6, breed: bulldog, color: golden, barked: 337
+Dog name: [Buddy] age: 6, breed: pug, color: gray, barked: 294
+Dog name: [Spot] age: 12, breed: lab, color: white and black spots, barked: 799
+Dog name: [Casper] age: 6, breed: poodle, color: black, barked: 11
+Dog name: [Duke] age: 10, breed: lab, color: white, barked: 462
+====================================
+Dogs after O(n^2) insertion sorting: 
+Dog name: [Bear] age: 18, breed: lab, color: white, barked: 565
+Dog name: [Bear] age: 10, breed: bulldog, color: white, barked: 887
+Dog name: [Buddy] age: 6, breed: pug, color: gray, barked: 294
+Dog name: [Casper] age: 6, breed: poodle, color: black, barked: 11
+Dog name: [Duke] age: 7, breed: pug, color: white and black spots, barked: 331
+Dog name: [Duke] age: 6, breed: bulldog, color: golden, barked: 337
+Dog name: [Duke] age: 10, breed: lab, color: white, barked: 462
+Dog name: [Jack] age: 19, breed: poodle, color: gray, barked: 79
+Dog name: [Jack] age: 17, breed: westie, color: golden, barked: 960
+Dog name: [Jack] age: 4, breed: lab, color: golden, barked: 281
+Dog name: [Rover] age: 16, breed: pug, color: white, barked: 612
+Dog name: [Rocky] age: 13, breed: lab, color: gray, barked: 894
+Dog name: [Rover] age: 12, breed: poodle, color: white and black spots, barked: 278
+Dog name: [Spot] age: 12, breed: lab, color: white and black spots, barked: 799
+Dog name: [Tucker] age: 3, breed: bulldog, color: white, barked: 111
+Time to sort: 2.538689 milliseconds
+====================================
+Dogs after O(n log n) merge sorting: 
+Dog name: [Buddy] age: 6, breed: pug, color: gray, barked: 294
+Dog name: [Bear] age: 18, breed: lab, color: white, barked: 565
+Dog name: [Bear] age: 10, breed: bulldog, color: white, barked: 887
+Dog name: [Casper] age: 6, breed: poodle, color: black, barked: 11
+Dog name: [Duke] age: 10, breed: lab, color: white, barked: 462
+Dog name: [Duke] age: 7, breed: pug, color: white and black spots, barked: 331
+Dog name: [Duke] age: 6, breed: bulldog, color: golden, barked: 337
+Dog name: [Jack] age: 19, breed: poodle, color: gray, barked: 79
+Dog name: [Jack] age: 17, breed: westie, color: golden, barked: 960
+Dog name: [Jack] age: 4, breed: lab, color: golden, barked: 281
+Dog name: [Rover] age: 12, breed: poodle, color: white and black spots, barked: 278
+Dog name: [Rocky] age: 13, breed: lab, color: gray, barked: 894
+Dog name: [Rover] age: 16, breed: pug, color: white, barked: 612
+Dog name: [Spot] age: 12, breed: lab, color: white and black spots, barked: 799
+Dog name: [Tucker] age: 3, breed: bulldog, color: white, barked: 111
+Time to sort: 0.029181 milliseconds
+====================================
+Enter a dog name to search for: 
+Casper
+Binary search:
+Dog name: [Casper] age: 6, breed: poodle, color: black, barked: 11
+Time to search: 0.087246 milliseconds
+====================================
+Sequential search:
+Dog name: [Casper] age: 6, breed: poodle, color: black, barked: 11
+Time to search: 0.067757 milliseconds
+====================================
