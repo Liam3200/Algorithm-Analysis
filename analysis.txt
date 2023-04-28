@@ -1,0 +1,12 @@
+Algorithm Analysis
+Sorting Dog Objects by name in Alphabetical Order
+
+Algorithms:	Insertion Sort	         Merge Sort          	Sequential Search     	Binary Search
+25 Objects	1.243304 milliseconds	0.044663 milliseconds	0.115625 milliseconds	0.103505 milliseconds
+50 Objects	1.274772 milliseconds	0.078906 milliseconds	0.037179 milliseconds	0.138632 milliseconds
+500 Objects	10.99097 milliseconds	1.136378 milliseconds	0.051576 milliseconds	0.095531 milliseconds
+
+Analysis of the different search and sort algorithms:
+The insertion sort method is very slow, around 3-10 times slower than the merge sort. The times for the insertion sort varied a lot as well, with the largest time I found for 500 objects being at 50ms.
+The Merge sort method is O(n log n) time complexity, with it increasing only slightly when increasing the number of objects it has to sort
+The sequential search had a similar time to the binary search, with both not experiencing time changes as the number of elements increased.
